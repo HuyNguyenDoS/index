@@ -1,0 +1,47 @@
+header
+{
+    background-color: blue;
+}
+section.main
+{
+    width: 80%;
+    margin: 0 auto;
+}
+table
+{
+    width: 100%;
+}
+table.search td :first-child
+{
+    width: 95%;
+    height: 30px;
+}
+.col40
+{
+    width: 40%;
+}
+.col25
+{
+    width: 25%;
+}
+.col10
+{
+    width: 10%;
+}
+.controls td :first-child
+{
+    width: 95%;
+    height: 30px;
+}
+.col60
+{
+    width: 60%;
+    vertical-align: top;
+}
+ul{
+    list-style-image: url(../images/bullet1.gif);
+}
+table.subjob tr:first-child
+{
+    background-color: lightgray;
+}

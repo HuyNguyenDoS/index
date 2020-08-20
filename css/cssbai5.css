@@ -1,0 +1,136 @@
+/*css header*/
+header >h1
+{
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+    text-shadow: 3px 4px goldenrod;
+    font-size: 56px;
+}
+@keyframes doimau
+{
+    from 
+    {color: red;}
+    to {
+        color: blue;
+    }
+}
+/*cssnav*/
+nav{
+    background-color: lightgray;
+}
+ul.menu 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+ul.menu>li
+{
+    min-width: 150;
+    text-align: center;
+    border-left: 1px solid white;
+}
+ul.menu>li:last-child /*dua phan tu cuoi cung trong ds qua ben trai*/
+{
+    margin-left: auto;
+}
+ul.menu > li > a /*thiet ke menu*/ 
+{
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+}
+ul.menu > li >a :hover
+{
+    background-color:darkblue;
+    color: white;
+}
+/*css contetn*/
+section.languages
+{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+/*hai ki thuat di doi voi nhau de hine thi khi thi nho*/
+div.lang
+{
+    overflow: auto;
+    border-bottom: 1px solid white;
+}
+div.image
+{
+    float: left; /*cai hinh day*/
+}
+/*hai the ben duoi dungf de quay, va quay cham*/
+div.image>img:hover{
+    transition: transform ease .5s;
+}
+div.image > img:hover
+{
+    transform: skew(-20deg);
+}
+/*css footer*/
+footer
+{
+    /* opacity 0.6*/
+    background-color: rgba(0, 0, 255, 0.6);
+    color:  white;
+    text-align: center;
+    margin: 15px;
+    padding: 20px 10px;
+    position: fixed;
+    bottom:  0; /* giu luon nam tren man hinh khong bị che*/
+    left: 0;
+    right: 0;
+}
+/*css submenu*/
+.subcontent
+{
+    /*display: none !important; /*ko cho hien thi menu*/
+    position: absolute;
+    background-color: lightgray;
+    opacity: 0;     /*ket hop tao hieu ung do menu cham*/
+    visibility: hidden;   /*an menu*/
+    transition: opacity .5s;
+}
+/*
+.submenu:hover .subcontent
+{
+    /*tao hieu ung re chuot do ds menu*/
+   /* display: block !important;
+}
+*/
+.submenu:hover .subcontent
+{
+    opacity: 1;
+    visibility: visible;
+    display: block !important;
+}
+/*css share*/
+ul.sharing
+{
+    background-color: rgba(0, 255, 0, 0.4);
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    left: -178px;
+    width: 200px;
+    z-index: 999;
+}
+ul.sharing > li
+{
+    border-bottom: 1px solid blue;
+}
+ul.sharing > li:hover
+{
+    left: 0;
+}
+ul.sharing > li >a
+{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
